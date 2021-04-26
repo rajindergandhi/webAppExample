@@ -13,7 +13,7 @@ node{
     
     
     stage('Build Docker Image'){
-        sh 'docker build -t rajindergandhi/webAppExample .'
+        sh 'docker build -t rajindergandhi/webAppExample.'
     }
     
     stage('Push Docker Image'){
