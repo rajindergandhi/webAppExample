@@ -13,7 +13,8 @@ node{
     
     
     stage('Build Docker Image'){
-        sh 'docker build -t rajindergandhi/webappexample .'
+       def dockerHome = tool name: 'Docker', type: 'dockerTool'
+       sh 'Docker build -t rajindergandhi/webappexample .'
     }
     
     stage('Push Docker Image'){
